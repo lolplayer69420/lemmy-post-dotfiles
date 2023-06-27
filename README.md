@@ -14,3 +14,4 @@ The dotfiles for this post https://lemmy.world/post/566843
 - dunst (notifications)
 - Tabliss (Firefox startpage)
 - i3 (Window Manager)
+- picom (Shadows)
