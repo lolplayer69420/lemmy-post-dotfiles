@@ -13,3 +13,4 @@ The dotfiles for this post https://lemmy.world/post/566843
 - Mountain colorscheme for firefox, gtk and vscode / vim https://github.com/mountain-theme/Mountain
 - dunst (notifications)
 - Tabliss (Firefox startpage)
+- i3 (Window Manager)
