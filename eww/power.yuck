@@ -1,0 +1,60 @@
+(defwindow powermenu
+    :monitor 0
+    :geometry (geometry :anchor "center center")
+    :stacking "fg"
+    :windowtype "normal"
+    :wm-ignore true
+(power_layout))
+
+(defwidget power_layout []
+    (centerbox :class "powermenu_layout"
+         :orientation "vertical"
+         :spacing 20
+         :style "background-color: rgba(15, 15, 15, 1)"
+    (dummy)
+    (buttons)
+    (close)))
+
+
+(defwidget close[]
+    (box :class "close"
+         :spacing 0
+         :orientation "vertical"
+         :halign "end"
+         :valign "start"
+    (button :onclick "eww close powermenu"
+            :class "exit"
+            :valign "center"
+            :halign "start"
+        "Cancel")))
+
+
+(defwidget buttons []
+    (box :class "buttons"
+         :spacing 140
+         :style "background-color: #191919"
+         :space-evenly true
+         :orientation "horizontal"
+         :halign "center"
+         :valign "start"
+    (button :onclick "systemctl poweroff"
+            :class "shutdown"
+        "󰐥")
+    (button :onclick "systemctl reboot"
+            :class "reboot"
+        "󰑙")
+    (button :onclick "i3-msg exit"
+            :class "logout"
+        "󰈆")))
+
+(defwidget dummy []
+    (box :class "dummy"
+         :orientation "vertical"
+         :style "padding-top: 50"))
+
+(defpoll time :interval "1s"
+    'date +"%I:%M"')
+(defpoll network_status :interval "1s"
+    "~/.config/eww/network.sh")
+(defpoll day :interval "1s"
+    "date '+%d de %B de %y'")

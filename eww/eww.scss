@@ -1,0 +1,81 @@
+* {
+    all: unset; 
+  }
+
+.powermenu_layout {
+    border-radius: 0px;
+    padding: 0px;
+}
+
+.powermenu_index {
+    font-family: "Material Design Icons Desktop Regular", "Google Sans";
+}
+
+.clock {
+    font-family: "Iosevka Nerd Font";
+    color: #cacaca;
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.network_status{
+    background-color: #0f0f0f;
+    color: #cacaca;
+    margin-left: 10px;
+}
+
+.buttons {
+    padding-left: 90;
+    padding-right: 90;
+    padding-top: 35;
+    padding-bottom: 35;
+    border-top: 2px solid #cacaca;
+    border-bottom: 2px solid #cacaca;
+}
+
+.close {
+    padding-top: 20;
+    padding-bottom: 20;
+    margin-right: 25;
+}
+
+.date {
+    background-color: #0f0f0f;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.day {
+    color: #cacaca;
+}
+
+.exit { 
+    color: #c49ea0;
+    font-size: 20px;
+}
+
+.shutdown {
+    border-radius: 7px;
+    color: #c49ea0;
+    font-size: 40px;
+}
+
+.cpu_info {
+    background-color: #cacaca;
+    color: #0f0f0f;
+    padding: 60px;
+}
+
+.reboot {
+    color: #c49ec4;
+    font-size: 40px;
+}
+
+.logout {
+    border-radius: 7px;
+    color: #a5b4cb;
+    font-size: 40px;
+    padding: 8px;
+}
