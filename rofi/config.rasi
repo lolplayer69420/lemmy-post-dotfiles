@@ -1,0 +1,127 @@
+
+
+configuration{
+  display-drun: "Run:";
+  drun-display-format: "{icon} {name}";
+  font: "Google Sans Regular 13";
+  modi: "drun";
+  show-icons: false;
+  icon-theme: "Paper";
+}
+@theme "/dev/null"
+
+
+
+mainbox {
+  background-color: @0D0D0D00;
+  children: [inputbar, listview];
+  padding: 0;
+  border-radius: 0px;
+  
+}
+
+
+* {
+  bg:  #0f0f0f;
+  bg2: #191919;
+  bg3: #282828;
+  bg4: #b8bb26;
+  highlight: #9ec3c4;
+  fg:  #cacaca;
+  fg2: #c4a7e7;
+  background-color: @bg;
+  textcolor: #ffffff;
+  border: 0;
+  margin: 0;
+  padding: 10;
+  spacing: 0;
+  
+}
+
+window {
+  location: center;
+  width: 30%;
+  height: 60%;
+  background-color: #000D0D0D;
+  
+}
+
+element {
+  padding: 0 0;
+  text-color: @fg;
+  background-color: @bg;
+  
+}
+
+element-text {
+  background-color: inherit;
+  text-color: @fg;
+  vertical-align: 0.5;
+  border-radius: 0px;
+}
+
+element-icon selected {
+  background-color: @highlight;
+  color: @bg;
+  
+  
+}
+
+element-text selected {
+  background-color: @bg2;
+  color: @fg;
+  
+  
+}
+
+highlight {
+  color: @bg4;
+}
+
+listview {
+  background-color: @bg;
+  border-radius: 0px;
+  scrollbar: false;
+  margin: 10px;
+  color: @fg;
+  columns: 1;
+  padding: 3;
+}
+
+element-icon {
+  size: 25;
+  padding: 5px ;
+}
+
+element selected {
+  background-color: @bg;
+  margin: 0px;
+
+}
+
+inputbar {
+  children: [prompt, entry];
+  padding: 100px 120px 10px 10px;
+  background-color: @bg2;
+  margin: 0px 0px 0px 0px;
+  border: 0 0 2px 0;
+  border-color: @fg;
+}
+
+prompt {
+  text-color: @fg;
+  background-color: @bg;
+  margin: 10px 10px 10px 30px;
+  border-radius: 0px;
+  padding: 10px 10px 0px 10px;
+  enabled: false;
+
+}
+
+entry {
+  placeholder: "";
+  text-color: @fg;
+  background-color: @bg2;
+  border-radius: 0px;
+  placeholder: "Search";
+}
